@@ -1,13 +1,63 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  height: 100vh;
+  background: #c6cbd1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.screen {
+  height: 4rem;
+  margin-bottom: 4rem;
+}
+
+.wrapper {
+  background: rgb(38, 67, 72);
+  width: 20rem;
+  padding: 2rem;
+  margin-top: 4rem;
+  border-radius: 1rem;
+  box-shadow: 10px -10px 20px 5px rgb(44 48 59 / 28%);
+}
+
+.buttonBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .5rem;
+}
+
+.button {
+  background: #bfc8cd;
+  height: 3.5rem;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #1e1f20;
+/*border: 1px solid #d0d7de;*/
+  font-size: 1.5rem;
+}
+
+.button:hover {
+  border: 2px solid #c0cbd7;
+}
+
+.equals {
+  background: #e9f0f2;
+  grid-column: 3/5;
+}
+
+.opr {
+  background: #497d8b;
 }
